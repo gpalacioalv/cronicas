@@ -1,0 +1,17 @@
+{
+    "servers": {
+        "wordpress-mcp": {
+            "type": "stdio",
+            "command": "npx",
+            "args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+            "env": {
+              "WP_API_URL": "http://wordpress-l0kc4ogcg0gckw0kwo4cwk0k.176.84.57.39.sslip.io/",
+              "WP_API_USERNAME": "joker",
+              "WP_API_PASSWORD": "619835299aA...",
+              "WOO_CUSTOMER_KEY": "your-woo-customer-key",
+              "WOO_CUSTOMER_SECRET": "your-woo-customer-secret",
+              "LOG_FILE": "optional full path to the log file"
+            }
+        }
+    }
+}
